@@ -31,7 +31,7 @@ export default {
   methods: {
     handleScroll () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-      if (scrollTop > 9) {
+      if (scrollTop > 56) {
         this.isOp = true
       } else {
         this.isOp = false
@@ -50,7 +50,8 @@ export default {
     top: 0
     left: 0
     width: 100%
-    height: 2.56rem
+    z-index: 999
+    height: 2.62rem
     background: linear-gradient(90deg, #00a5ff, #0087ff)
     .eleme
       width: 100%
@@ -79,7 +80,7 @@ export default {
         font-size: 0.42rem
         margin: 0 .1rem
     .search
-      padding: 0.16rem 0
+      padding: 0.19rem 0
       height: .72rem
       .serch-input
         color: #abb1b6
