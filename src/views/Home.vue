@@ -5,9 +5,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import HomeHeader from '@/pages/home/Header.vue'
-
 export default {
   name: 'home',
   components: {
@@ -15,6 +13,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus" scoped>
-</style>

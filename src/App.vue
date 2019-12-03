@@ -38,7 +38,7 @@ export default {
     width: 100%
     display: flex
     position: fixed
-    height: 1.18rem
+    height: 1.1rem
     background: #fff
     border-top: 1px solid #eee;
     a
@@ -50,8 +50,10 @@ export default {
       justify-content: center
       flex-direction: column
       .iconfont
-        font-size: .42rem
+        font-size: .48rem
         margin-bottom: 0.04rem
+      p
+        font-size: .22rem
     .router-link-exact-active
       color: #1886ff
   .main .home

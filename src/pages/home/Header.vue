@@ -1,5 +1,8 @@
 <template>
-  <div class="header">
+  <div :class="['header', {ophead: isOp}]">
+    <div class="eleme">
+      <img src="../../assets/logo.png">
+    </div>
     <div class="map">
       <span class="iconfont">&#xe61e;</span>
       <p>广东岭南职业技术学院</p>
@@ -16,7 +19,28 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  data () {
+    return {
+      isOp: false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if (scrollTop > 9) {
+        this.isOp = true
+      } else {
+        this.isOp = false
+      }
+    }
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 }
 </script>
 
@@ -26,39 +50,54 @@ export default {
     top: 0
     left: 0
     width: 100%
-    height: 1.8rem
-    background: #00a1ff
+    height: 2.56rem
+    background: linear-gradient(90deg, #00a5ff, #0087ff)
+    .eleme
+      width: 100%
+      height: 1rem
+      display: flex
+      margin: 0 0.43rem
+      align-items: center
+      img
+        width: auto
+        height: .42rem
     .map
       display: inline-flex
       color: #fff
-      height: .42rem
+      height: .34rem
       margin: 0 .3rem
       cursor: pointer
-      font-size: .32rem
-      line-height: .42rem;
+      font-size: .34rem
+      line-height: .34rem
       padding-top: 0.18rem
       p
-        width: 3.4rem;
+        width: 2.8rem
         overflow: hidden
         white-space: nowrap
         text-overflow: ellipsis
       span
-        font-size: 0.42rem;
-        margin: 0 .1rem;
+        font-size: 0.42rem
+        margin: 0 .1rem
     .search
-      padding: 0.18rem 0
-      height: .84rem
+      padding: 0.16rem 0
+      height: .72rem
       .serch-input
         color: #abb1b6
         height: 100%
         display: flex
         cursor: pointer
         margin: 0 .3rem
-        background: #fff
         user-select: none
-        align-items: center;
+        background: #f4fbff
+        align-items: center
         border-radius: .84rem
-        justify-content: center;
+        justify-content: center
         span
           margin-right: .12rem
+        p
+          font-size: .26rem
+  .ophead
+    height: 2.04rem
+    .map
+      display: none
 </style>
