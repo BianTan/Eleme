@@ -1,9 +1,4 @@
-# eleme
-
-## Project setup
-```
-npm install
-```
+# Vue 仿饿了么项目
 
 ### Compiles and hot-reloads for development
 ```
@@ -15,10 +10,5 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 我的博客
+飞机票 -> [我是笨蛋小扁担](https://biantan.org).
