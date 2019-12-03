@@ -36,6 +36,7 @@ export default {
     left: 0
     bottom: 0
     width: 100%
+    z-index: 999
     display: flex
     position: fixed
     height: 1.1rem
@@ -57,5 +58,5 @@ export default {
     .router-link-exact-active
       color: #1886ff
   .main .home
-    margin-top: 1.8rem
+    margin-top: 2.62rem
 </style>
