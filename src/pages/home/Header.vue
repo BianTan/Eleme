@@ -5,7 +5,7 @@
     </div>
     <div class="map">
       <span class="iconfont">&#xe61e;</span>
-      <p>广东岭南职业技术学院</p>
+      <p>银河中心10万光年的旋臂上</p>
       <span class="iconfont">&#xe6b9;</span>
     </div>
     <div class="search">
