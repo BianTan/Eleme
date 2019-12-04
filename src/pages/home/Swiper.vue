@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="header-swiper-wrapper">
     <swiper :options="swiperOption">
       <swiper-slide v-for="item of swiperList" :key="item.id" class="swiper-slide">
         <li class="swiper-li">
@@ -32,16 +32,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  .wrapper >>> .swiper-pagination-bullet
+  .header-swiper-wrapper >>> .swiper-pagination-bullet
     width: .17rem
     height: .03rem
     margin: 0 2px!important
     margin-top: 2px
     border-radius: 0
     background: rgba(255, 255, 255, 0.9)
-  .wrapper >>> .swiper-pagination-bullet-active
+  .header-swiper-wrapper >>> .swiper-pagination-bullet-active
     background: #fff
-  .wrapper
+  .header-swiper-wrapper
     overflow: hidden
     height: 0
     background: #fff

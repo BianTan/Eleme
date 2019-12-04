@@ -3,17 +3,20 @@
     <div class="bg"></div>
     <home-header></home-header>
     <home-swiper></home-swiper>
+    <home-icons></home-icons>
   </div>
 </template>
 
 <script>
 import HomeHeader from '@/pages/home/Header.vue'
 import HomeSwiper from '@/pages/home/Swiper.vue'
+import HomeIcons from '@/pages/home/Icons.vue'
 export default {
   name: 'home',
   components: {
     HomeHeader,
-    HomeSwiper
+    HomeSwiper,
+    HomeIcons
   }
 }
 </script>
