@@ -57,5 +57,6 @@ export default {
           width: 100%
           position: absolute
           left: 0
+          object-fit: cover
           border-radius: 0.12rem
 </style>
