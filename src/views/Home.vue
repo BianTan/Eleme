@@ -4,6 +4,8 @@
     <home-header></home-header>
     <home-swiper></home-swiper>
     <home-icons></home-icons>
+    <home-more></home-more>
+    <home-swiper class="swiper-two"></home-swiper>
   </div>
 </template>
 
@@ -11,17 +13,21 @@
 import HomeHeader from '@/pages/home/Header.vue'
 import HomeSwiper from '@/pages/home/Swiper.vue'
 import HomeIcons from '@/pages/home/Icons.vue'
+import HomeMore from '@/pages/home/More.vue'
 export default {
   name: 'home',
   components: {
     HomeHeader,
     HomeSwiper,
-    HomeIcons
+    HomeIcons,
+    HomeMore
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+.home
+  padding-bottom: 1.1rem
   .bg
     height: 16em
     width: 160%
@@ -32,4 +38,6 @@ export default {
     left: 50%
     -webkit-transform: translate(-50%, 0)
     transform: translate(-50%, 0)
+  .swiper-two
+    margin: .32rem 0
 </style>
