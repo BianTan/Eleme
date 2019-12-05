@@ -67,6 +67,7 @@ export default {
   .swiper-pagination >>> .swiper-pagination-bullet-active
     background: #3abaff
   .icons
+    user-select: none
     overflow: hidden
     height: 0
     margin: 0.25rem 0
@@ -78,6 +79,7 @@ export default {
         list-style: none
         margin: 0 0.24rem
         .icon
+          cursor: pointer
           position: relative
           overflow: hidden
           float: left

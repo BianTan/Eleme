@@ -42,6 +42,7 @@ export default {
   .header-swiper-wrapper >>> .swiper-pagination-bullet-active
     background: #fff
   .header-swiper-wrapper
+    user-select: none
     overflow: hidden
     height: 0
     background: #fff
