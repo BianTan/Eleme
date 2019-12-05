@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import List from '../views/List.vue'
+import User from '../views/User.vue'
 
 Vue.use(VueRouter)
 
@@ -13,12 +15,12 @@ const routes = [
   {
     path: '/list',
     name: 'list',
-    component: () => import('../views/List.vue')
+    component: List
   },
   {
     path: '/user',
     name: 'user',
-    component: () => import('../views/User.vue')
+    component: User
   }
 ]
 
