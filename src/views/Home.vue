@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <div class="bg"></div>
-    <home-header></home-header>
+    <home-header :isClass="isClass"></home-header>
     <home-swiper></home-swiper>
     <home-icons></home-icons>
     <home-more></home-more>
     <home-swiper class="swiper-two"></home-swiper>
-    <home-recommend></home-recommend>
+    <home-recommend :isRecommend="isRecommend"></home-recommend>
   </div>
 </template>
 
@@ -24,6 +24,28 @@ export default {
     HomeIcons,
     HomeMore,
     HomeRecommend
+  },
+  data () {
+    return {
+      isClass: false,
+      isRecommend: false,
+      menuTop: 0
+    }
+  },
+  mounted () {
+    this.menuTop = document.querySelector('.menu').offsetTop
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      let headerHeight = document.querySelector('.header').offsetHeight
+      this.isClass = scrollTop > 56
+      this.isRecommend = scrollTop >= (this.menuTop - headerHeight)
+    }
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>

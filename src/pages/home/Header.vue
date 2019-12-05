@@ -1,5 +1,5 @@
 <template>
-  <div :class="['header', {ophead: isOp}]">
+  <div :class="['header', {headerActive: isClass}]">
     <div class="eleme">
       <img src="../../assets/logo.png">
     </div>
@@ -20,26 +20,8 @@
 <script>
 export default {
   name: 'HomeHeader',
-  data () {
-    return {
-      isOp: false
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll () {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-      if (scrollTop > 56) {
-        this.isOp = true
-      } else {
-        this.isOp = false
-      }
-    }
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
+  props: {
+    isClass: Boolean
   }
 }
 </script>
@@ -97,7 +79,7 @@ export default {
           margin-right: .12rem
         p
           font-size: .26rem
-  .ophead
+  .headerActive
     height: 2.04rem
     .map
       display: none

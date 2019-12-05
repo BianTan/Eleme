@@ -1,5 +1,5 @@
 <template>
-  <div class="home-recommend">
+  <div :class="['home-recommend', {recommendActive: isRecommend}]">
     <div class="title">
       猜你喜欢
     </div>
@@ -53,9 +53,17 @@ export default {
         { id: '0002', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不起', star: '2', mom: '666' },
         { id: '0003', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不啃得起', star: '3', mom: '888' },
         { id: '0004', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '你管我啃不啃得起', star: '4', mom: '998' },
-        { id: '0005', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '我啃得起哦', star: '5', mom: '1999' }
+        { id: '0005', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '我啃得起哦', star: '5', mom: '1999' },
+        { id: '0006', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃得起', star: '1', mom: '233' },
+        { id: '0007', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不起', star: '2', mom: '666' },
+        { id: '0008', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不啃得起', star: '3', mom: '888' },
+        { id: '0009', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '你管我啃不啃得起', star: '4', mom: '998' },
+        { id: '0010', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '我啃得起哦', star: '5', mom: '1999' }
       ]
     }
+  },
+  props: {
+    isRecommend: Boolean
   }
 }
 </script>
@@ -158,4 +166,14 @@ export default {
             margin: 0 .05rem
             border: 1px solid #ffc9c1
             border-radius: 2px
+.recommendActive
+  .menu
+    position: fixed
+    top: 2.04rem
+    left: 0
+    z-index: 998
+    .menu-select
+      margin: 0 .25rem
+    .menu-hb
+      margin: 0 .25rem
 </style>
