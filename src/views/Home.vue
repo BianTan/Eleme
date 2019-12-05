@@ -33,7 +33,8 @@ export default {
     }
   },
   mounted () {
-    this.menuTop = document.querySelector('.menu').offsetTop
+    let menu = document.querySelector('.menu')
+    this.menuTop = menu.offsetTop
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {

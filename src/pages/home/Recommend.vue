@@ -40,6 +40,9 @@
         </div>
       </div>
     </div>
+    <div class="recommend-load">
+      <p>正在加载...</p>
+    </div>
   </div>
 </template>
 
@@ -49,16 +52,12 @@ export default {
   data () {
     return {
       items: [
-        { id: '0001', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃得起', star: '1', mom: '233' },
-        { id: '0002', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不起', star: '2', mom: '666' },
-        { id: '0003', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不啃得起', star: '3', mom: '888' },
-        { id: '0004', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '你管我啃不啃得起', star: '4', mom: '998' },
-        { id: '0005', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '我啃得起哦', star: '5', mom: '1999' },
-        { id: '0006', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃得起', star: '1', mom: '233' },
-        { id: '0007', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不起', star: '2', mom: '666' },
-        { id: '0008', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不啃得起', star: '3', mom: '888' },
-        { id: '0009', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '你管我啃不啃得起', star: '4', mom: '998' },
-        { id: '0010', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '我啃得起哦', star: '5', mom: '1999' }
+        { id: '0001', imgUrl: 'https://cube.elemecdn.com/8/ed/f6be3e780022a27eeb93f047c491epng.png', title: '至尊比萨(太阳系店)', star: '4.5', mom: '665' },
+        { id: '0002', imgUrl: 'https://cube.elemecdn.com/1/53/0f73fd159d8615d0f15311ac0bfeapng.png', title: '爺門串串(银河系店)', star: '4.1', mom: '288' },
+        { id: '0003', imgUrl: 'https://cube.elemecdn.com/0/79/9f2c9cfdc2dfbd05aadc54b6836c3jpeg.jpeg', title: '华莱士(谈笑店)', star: '4.4', mom: '2494' },
+        { id: '0004', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不起', star: '2', mom: '666' },
+        { id: '0005', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '啃不啃得起', star: '3', mom: '888' },
+        { id: '0006', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', title: '你管我啃不啃得起', star: '4', mom: '998' }
       ]
     }
   },
@@ -112,6 +111,8 @@ export default {
       cursor: pointer
       display: flex
       margin: .3rem 0
+      border-bottom: .133333vw solid #eee
+      padding-bottom: 0.2rem
       .item-img
         width: 2rem
         height: 2rem
@@ -166,7 +167,13 @@ export default {
             margin: 0 .05rem
             border: 1px solid #ffc9c1
             border-radius: 2px
+  .recommend-load
+    display: flex
+    height: .76rem
+    justify-content: center
 .recommendActive
+  .title
+    margin-bottom: 1.84rem
   .menu
     position: fixed
     top: 2.04rem

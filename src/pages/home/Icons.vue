@@ -25,18 +25,20 @@ export default {
         pagination: '.swiper-pagination'
       },
       iconsList: [
-        { id: '01', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png', desc: '美食' },
-        { id: '02', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png', desc: '午餐' },
-        { id: '03', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png', desc: '卖场便利' },
-        { id: '04', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png', desc: '水果' },
-        { id: '05', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png', desc: '送药上门' },
-        { id: '06', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png', desc: '星选好店' },
-        { id: '07', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/fc/b10a6b2e4f0fe102.png', desc: '买菜' },
-        { id: '08', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/c1/6f15f887179fa002.png', desc: '跑腿代购' },
-        { id: '09', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png', desc: '甜品饮品' },
-        { id: '10', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/fc/b10a6b2e4f0fe102.png', desc: '签到赢饭钱' },
-        { id: '11', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png', desc: '地方美食' },
-        { id: '12', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png', desc: '麻辣烫' }
+        { id: '01', imgUrl: 'https://cube.elemecdn.com/7/d8/a867c870b22bc74c87c348b75528djpeg.jpeg', desc: '美食' },
+        { id: '02', imgUrl: 'https://cube.elemecdn.com/9/21/60ac33f023d9074e13cd78f9b5964jpeg.jpeg', desc: '夜宵' },
+        { id: '03', imgUrl: 'https://cube.elemecdn.com/c/7e/76a23eb90dada42528bc41499d6f8jpeg.jpeg', desc: '商超便利' },
+        { id: '04', imgUrl: 'https://cube.elemecdn.com/0/d0/dd7c960f08cdc756b1d3ad54978fdjpeg.jpeg', desc: '水果' },
+        { id: '05', imgUrl: 'https://cube.elemecdn.com/7/0a/af108e256ebc9f02db599592ae655jpeg.jpeg', desc: '医药健康' },
+        { id: '06', imgUrl: 'https://cube.elemecdn.com/3/01/c888acb2c8ba9e0c813f36ec9e90ajpeg.jpeg', desc: '浪漫鲜花' },
+        { id: '07', imgUrl: 'https://cube.elemecdn.com/e/58/bceb19258e3264e64fb856722c3c1jpeg.jpeg', desc: '跑腿代购' },
+        { id: '08', imgUrl: 'https://cube.elemecdn.com/b/7f/432619fb21a40b05cd25d11eca02djpeg.jpeg', desc: '汉堡披萨' },
+        { id: '09', imgUrl: 'https://cube.elemecdn.com/c/21/e42997b86b232161a5a16ab813ae8jpeg.jpeg', desc: '厨房生鲜' },
+        { id: '10', imgUrl: 'https://cube.elemecdn.com/2/35/696aa5cf9820adada9b11a3d14bf5jpeg.jpeg', desc: '甜品饮品' },
+        { id: '11', imgUrl: 'https://cube.elemecdn.com/0/1a/314b6da88ab6c7ae9828f91652d40jpeg.jpeg', desc: '速食简餐' },
+        { id: '12', imgUrl: 'https://cube.elemecdn.com/7/d6/6f2631288a44ec177204e05cbcb93jpeg.jpeg', desc: '地方小吃' },
+        { id: '13', imgUrl: 'https://cube.elemecdn.com/a/7b/b02bd836411c016935d258b300cfejpeg.jpeg', desc: '大牌惠吃' },
+        { id: '14', imgUrl: 'https://cube.elemecdn.com/d/38/7bddb07503aea4b711236348e2632jpeg.jpeg', desc: '速食简餐' }
       ]
     }
   },
