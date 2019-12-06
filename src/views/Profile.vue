@@ -1,12 +1,12 @@
 <template>
-  <div class="user">
-    User
+  <div class="profile">
+    profile
   </div>
 </template>
 
 <script>
 export default {
-  name: 'user'
+  name: 'Profile'
 }
 </script>
 
