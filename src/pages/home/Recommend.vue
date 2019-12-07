@@ -158,10 +158,10 @@ export default {
           color: #ff4b33
           height: .4rem
           line-height: .4rem
-          font-size: .2rem
+          font-size: .21rem
           margin-left: -.05rem
           span
-            padding: .04rem
+            padding: .02rem .08rem
             margin: 0 .05rem
             border: 1px solid #ffc9c1
             border-radius: 2px

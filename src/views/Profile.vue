@@ -22,5 +22,5 @@ export default {
 
 <style lang="stylus" scoped>
 .profile
-  padding: 1rem .25rem 1.12rem .25rem
+  padding: .96rem .25rem 1.12rem .25rem
 </style>

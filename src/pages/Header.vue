@@ -17,7 +17,7 @@ export default {
   top: 0
   left: 0
   width: 100%
-  height: 1rem
+  height: .96rem
   display: flex
   padding: 0 0.43rem
   align-items: center
