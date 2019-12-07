@@ -21,9 +21,9 @@ export default {
   data () {
     return {
       items: [
-        { id: 1, icon: '\ue606', label: '首页', url: '/' },
-        { id: 2, icon: '\ue613', label: '订单', url: '/order' },
-        { id: 3, icon: '\ue633', label: '我的', url: '/profile' }
+        { id: 1, icon: '\ue606', label: '首页', url: './' },
+        { id: 2, icon: '\ue613', label: '订单', url: './order' },
+        { id: 3, icon: '\ue633', label: '我的', url: './profile' }
       ],
       activeIndex: 0
     }
