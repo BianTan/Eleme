@@ -8,17 +8,17 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: './',
     name: 'home',
     component: Home
   },
   {
-    path: '/order',
+    path: './order',
     name: 'Order',
     component: Order
   },
   {
-    path: '/profile',
+    path: './profile',
     name: 'Profile',
     component: Profile
   }
