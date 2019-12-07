@@ -39,8 +39,8 @@ export default {
         { id: '0001', name: '至尊比萨(太阳系店)', imgUrl: 'https://cube.elemecdn.com/8/ed/f6be3e780022a27eeb93f047c491epng.png', datetime: '9012-01-05 00:05', status: '订单已送达', detail: '998英寸金枕头榴莲比萨', price: '￥2998' },
         { id: '0002', name: '爺門串串(银河系店)', imgUrl: 'https://cube.elemecdn.com/1/53/0f73fd159d8615d0f15311ac0bfeapng.png', datetime: '9012-01-04 00:04', status: '订单已送达', detail: '外星人串串 * N份', price: '￥233' },
         { id: '0003', name: '华莱士(谈笑店)', imgUrl: 'https://cube.elemecdn.com/0/79/9f2c9cfdc2dfbd05aadc54b6836c3jpeg.jpeg', datetime: '9012-01-03 00:03', status: '订单已送达', detail: '白框眼镜 * 1', price: '￥1' },
-        { id: '0004', name: '啃不起', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', datetime: '9012-01-02 00:02', status: '订单已送达', detail: '铁🍔🍔 * 233', price: '￥250' },
-        { id: '0005', name: '啃不啃得起', imgUrl: 'http://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', datetime: '9012-01-01 00:01', status: '订单已送达', detail: '铁🍔🍔 * 1688', price: '￥251' }
+        { id: '0004', name: '啃不起', imgUrl: 'https://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', datetime: '9012-01-02 00:02', status: '订单已送达', detail: '铁🍔🍔 * 233', price: '￥250' },
+        { id: '0005', name: '啃不啃得起', imgUrl: 'https://attachment.jmw.com.cn/comp_uploadfile/slt/2018/05/10/s1_15361525924922.jpg', datetime: '9012-01-01 00:01', status: '订单已送达', detail: '铁🍔🍔 * 1688', price: '￥251' }
       ]
     }
   }
